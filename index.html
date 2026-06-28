@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista To-Do</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h1>Lista To‑Do</h1>
+
+    <form id="todo_form">
+      <input
+        type="text"
+        name=""
+        id="todo_input"
+        placeholder="Digite uma tarefa..."
+        required
+        oninvalid="this.setCustomValidity('Campo obrigatório seu bosta')"
+        oninput="this.setCustomValidity('')"
+        
+      />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="todo_list"></ul>
+
+    <h2>Tarefas Concluídas</h2>
+    <ul id="completed_list"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
